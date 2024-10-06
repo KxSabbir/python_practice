@@ -1,0 +1,28 @@
+class futreTrade:
+  def __init__(self,name,investment, openingPrices,closingPrices,lavarage):
+    self.name = name
+    self.investment = investment
+    self.openingPrices = openingPrices
+    self.closingPrices = closingPrices
+    self.lavarage = lavarage
+
+  def profit(self):
+    abc = self.closingPrices - self.openingPrices
+    bcd = (self.investment * self.lavarage)/self.openingPrices
+    fee = self.investment * self.lavarage * 0.01
+    xyz = (abc * bcd) - fee
+    print(f"you make profit from per {self.name} is {abc} Dollers")
+    print(f"you get total {bcd} {self.name} coin")
+    print(f"Thus, your total profit would be {xyz} Dollers. (removing the market maker fee)")
+    
+
+
+coin = input("enter the name of coin: ")
+investment = int(input("enter the investment amount: "))
+opening = float(input("enter the opening price: "))
+closing = float(input("enter the closing price: "))
+lavarage = int(input("enter the lavarage: "))
+
+
+my_trade = futreTrade(coin,investment,opening,closing,lavarage)
+my_trade.profit()
