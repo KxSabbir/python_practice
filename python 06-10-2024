@@ -1,4 +1,4 @@
-4. Write a Python program that calculates the area of a circle based on the radius entered by the user.
+Write a Python program that calculates the area of a circle based on the radius entered by the user.
 
 # code of calculate circle are by getting radius from the user
 
@@ -9,7 +9,7 @@ circle_area = (radius*radius)*3.1416
 print(circle_area)
 
 =================================================================================================================================================================================================================================
-5. Write a Python program that accepts the user's first and last name and prints them in reverse order with a space between them.
+Write a Python program that accepts the user's first and last name and prints them in reverse order with a space between them.
 
 # code of user's first and last name and prints them in reverse order with a space between them
 
@@ -20,3 +20,24 @@ last_name = input("what is your last name: " )
 print(f"{last_name} {first_name}")
 
 =================================================================================================================================================================================================================================
+
+#Case conversion
+text = "abu sabbir kausar"
+text = text.upper()
+text = text.capitalize()
+text = text.title()
+text = text.swapcase()
+
+print(text)
+=================================================================================================================================================================================================================================
+***Have to resolve this fully****
+text = "Hello, world! Hello again!"
+substring = "Hello"
+
+starting_index = 0
+while True:
+    index = text.find(substring, starting_index)
+    if index == -1:
+        break
+    print(f"Substring found at index {index}")
+    starting_index = index + 1
