@@ -1,1 +1,22 @@
+4. Write a Python program that calculates the area of a circle based on the radius entered by the user.
 
+# code of calculate circle are by getting radius from the user
+
+radius = float(input("Enter the circle radius: "))
+
+circle_area = (radius*radius)*3.1416
+
+print(circle_area)
+
+=================================================================================================================================================================================================================================
+5. Write a Python program that accepts the user's first and last name and prints them in reverse order with a space between them.
+
+# code of user's first and last name and prints them in reverse order with a space between them
+
+first_name = input("What is your first name: ")
+last_name = input("what is your last name: " )
+
+
+print(f"{last_name} {first_name}")
+
+=================================================================================================================================================================================================================================
