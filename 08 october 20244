@@ -41,3 +41,12 @@ name_outputUpdate = name_output.split(", ")
 print(name_output)
 print(name_outputUpdate)
 =================================================================================================================================================================================================================================
+Write a  Python program to display the examination schedule. (extract the date from exam_st_date).
+
+exam_st_date = (11, 12, 2014)
+exam_day = str(f"{exam_st_date[0]}")
+exam_month = str(f"{exam_st_date[1]}")
+exam_year = str(f"{exam_st_date[2]}")
+exam_date = exam_day +"/"+ exam_month + "/"+exam_year
+print(exam_date)
+=================================================================================================================================================================================================================================
