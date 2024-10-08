@@ -1,1 +1,43 @@
+#  Code for creat a list from a string
 
+name = "abu sabbir,kausar khan, hossain khan"
+name_list = name.split(",")
+name_listT = tuple(name_list)
+name_listL = list(name_listT) 
+print(name_list)
+print(name_listT)
+print(name_listL)
+
+st1 = "kausar khan, "
+st2 = "sabbir khan, "
+st3 = "salman khan, "
+
+sts = st1 +st2 + st3
+stsF = sts.split(",")
+print(stsF)
+=================================================================================================================================================================================================================================
+# split method
+
+# st1 = "kausar khan "
+# st2 = "sabbir khan "
+# st3 = "salman khan "
+
+# sts = st1 +st2 + st3
+# stsF = sts.split(",")
+# print(stsF)
+
+=================================================================================================================================================================================================================================
+# code for convert a list into a string and re-convert it to a list
+# name_list = ["abu sabbir", "abu hena rony", "emon ahmed"] 
+# name = name_list[0] +", "+name_list[1] +", "+ name_list[2] convert list to a string
+# name_listU = name.split(", ") re convert this string into a list
+# print(name)
+# print(name_listU)
+=================================================================================================================================================================================================================================
+#Code for creat a list from a string which have multiple values
+name = "abu sabbir" , "kausar ahmad", "khan younus", "amir khan"
+name_output= ", ".join(name)
+name_outputUpdate = name_output.split(", ")
+print(name_output)
+print(name_outputUpdate)
+=================================================================================================================================================================================================================================
